@@ -17,3 +17,12 @@ class ProductSerializer(ModelSerializer):
     class Meta:
         model = models.Product
         fields = ['id', 'name', 'category', 'date_created']
+
+
+
+class ArticleSerializer(ModelSerializer):
+
+
+    class Meta:
+        model = models.Article
+        fields = ['id', 'date_created', 'name', 'price', 'product']
