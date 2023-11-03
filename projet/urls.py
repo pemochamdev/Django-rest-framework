@@ -9,6 +9,7 @@ from shop import views
 
 router = routers.SimpleRouter()
 router.register('category', views.CategoryViewset, basename='category')
+router.register('product', views.ProductViewset, basename='product')
 
 
 
